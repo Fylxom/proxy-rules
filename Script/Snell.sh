@@ -33,4 +33,4 @@ EOF
 systemctl daemon-reload
 systemctl enable snell
 systemctl start snell
-rm snell-server-v5.0.0-linux-amd64.zip
+rm snell-server-v5.0.1-linux-amd64.zip
