@@ -1,6 +1,6 @@
 #!/bin/bash
 apt update && apt install wget unzip
-wget https://github.com/passeway/Snell/releases/download/v5.0.1/snell-server-v5.0.1-linux-amd64.zip
+wget https://dl.nssurge.com/snell/snell-server-v5.0.1-linux-amd64.zip
 unzip snell-server-v5.0.1-linux-amd64.zip -d /usr/local/bin
 chmod +x /usr/local/bin/snell-server
 mkdir /etc/snell
