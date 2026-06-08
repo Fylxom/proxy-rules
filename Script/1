@@ -1,8 +1,0 @@
-apt install socat
-apt update
-apt install cron -y
-systemctl enable cron
-systemctl start cron
-curl https://get.acme.sh | sh
-ln -s  /root/.acme.sh/acme.sh /usr/local/bin/acme.sh
-ufw allow 80
