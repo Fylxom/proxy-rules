@@ -1,9 +1,9 @@
 #!/bin/bash
 apt update && apt install -y wget unzip openssl
-wget https://github.com/anytls/anytls-go/releases/download/v0.0.11/anytls\_0.0.11\_linux\_amd64.zip
-unzip anytls_0.0.11_linux_amd64.zip
-wget https://github.com/MetaCubeX/mihomo/releases/download/v1.19.15/mihomo-linux-amd64-v1.19.15.gz
-gzip -dc mihomo-linux-amd64-v1.19.15.gz > mihomo
+wget https://github.com/anytls/anytls-go/releases/download/v0.0.12/anytls_0.0.12_linux_amd64.zip
+unzip anytls_0.0.12_linux_amd64.zip
+wget https://github.com/MetaCubeX/mihomo/releases/download/v1.19.27/mihomo-linux-amd64-v1.19.27.gz
+gzip -dc mihomo-linux-amd64-v1.19.27.gz > mihomo
 cp mihomo /usr/local/bin
 chmod +x /usr/local/bin/mihomo
 mkdir -p /etc/mihomo
@@ -50,7 +50,7 @@ listeners:
 EOF
 systemctl enable mihomo
 systemctl start mihomo
-rm mihomo-linux-amd64-v1.19.15.gz
-rm anytls_0.0.11_linux_amd64.zip
+rm mihomo-linux-amd64-v1.19.27.gz
+rm anytls_0.0.12_linux_amd64.zip
 rm readme.md
 rm mihomo
